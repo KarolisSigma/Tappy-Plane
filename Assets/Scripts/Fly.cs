@@ -15,7 +15,7 @@ public class Fly : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)) {
-            rb.AddForce(Vector2.up * jumpForce * Time.deltaTime);
+            rb.velocity = Vector2.up*jumpForce;
         }
     }
 }
